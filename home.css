@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+#home-background {
+    //background: rgb(165, 194, 110);
+    //background: #e96052;
+    background: #eaa161;
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#screen {
+    position: absolute;
+    background: #4d6166;
+    top:17%;
+    left:20%;
+    right:20%;
+    bottom: 25%;
+    box-shadow: 8px 8px 3px rgba(106,106,106,0.4);
+    border-radius: 5px;
+}
+
+#projector {
+    background: url(projector.svg) center center no-repeat;
+    position: absolute;
+    top: 78%;
+    left:-5%;
+    height: 34%;
+    width: 15%;
+    transform: rotate(-35deg);
+}
+
+.explore-logo {
+    position: absolute;
+    left: 30%;
+    top: 4%;
+    width: 40%;
+    
+}
+
+#screen-tex {
+    position: absolute;
+    background: url(grunge-texture-screen.svg);
+    height: 100%;
+    width:100%;
+    animation: grunge 2s infinite 
+}
+
+.projector-light {
+    position: absolute;
+    height:81%;
+    width:60%;
+    top:19.5%;
+    left: 3%;
+    opacity: 1;
+    animation: flicker 2s infinite linear;
+}
+
+@-webkit-keyframes grunge {
+	from {
+		opacity: 1;
+        left:0;
+	}
+	15% {
+		opacity: 1;
+        left: 1px;
+	}
+	30% {
+		opacity: 0.5;
+        left:2;
+	}
+	45% {
+		opacity: 1;
+        left:1;
+	}
+	60% {
+		opacity: 0.5;
+        left:2;
+	}
+	75% {
+		opacity: 1;
+        left:1;
+	}
+	85% {
+		opacity: 0.7;
+        left:2;
+	}
+	95% {
+		opacity: 0.8;
+        left:1;
+	}
+	to {
+		opacity: 1;
+        left:0;
+	}
+    
+}
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+#popcorn {
+    position: absolute;
+    height:25%;
+    width:22.5%;
+    bottom: -1%;
+    right:10px;
+}
+
+#navicon {
+    position: absolute;
+    top: 5px;
+    height: 15%;
+    margin-left:5px;
+    transform: rotate(0deg);
+}
+
+#noise {
+    height: 100%;
+    width: 100%;
+    background: url(noisy-texture-100x100-o73-d100-c-3e5d58-t1.png);
+    opacity: 0.9;
+    background-blend-mode:darken;
+}
+
+#curtains {
+    position: absolute;
+    top: 0;
+    left:-7px;
+    //height: 100%;
+    width: 100%;
+    background: url(curtain.svg) center center no-repeat;
+    background-size: cover;
+}
