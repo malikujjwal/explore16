@@ -1,3 +1,8 @@
+@font-face {
+    font-family: bebas neue;
+    src: url(fonts/BebasNeue.otf);
+format("opentype");}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,16 +48,45 @@ table {
 }
 
 
-
 #home-background {
-    //background: rgb(165, 194, 110);
-    //background: #e96052;
-    background: #eaa161;
+    position: relative;
+    background: #222;
     height:100%;
     width:100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    height: 45px;
+    z-index: 5;
+    box-shadow: 0px 2px 15px rgba(0,0,0, 0.3);
+}
+
+.bar {
+    display: inline-block;
+    width: 100%;
+    background: #ffb700;
+    height: 100%;
+}
+
+.menu img {
+    height: 100%;
+}
+
+#reel {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url(images/reel-pattern.png);
+    background-size: contain;
+    opacity: 0.8;
+    mix-blend-mode: overlay;
 }
 
 #screen {
@@ -62,12 +96,12 @@ table {
     left:20%;
     right:20%;
     bottom: 25%;
-    box-shadow: 8px 8px 3px rgba(106,106,106,0.4);
+    box-shadow: 8px 8px 8px rgba(106,106,106,0.4);
     border-radius: 5px;
 }
 
 #projector {
-    background: url(projector.svg) center center no-repeat;
+    background: url(images/projector.svg) center center no-repeat;
     position: absolute;
     top: 78%;
     left:-5%;
@@ -86,7 +120,7 @@ table {
 
 #screen-tex {
     position: absolute;
-    background: url(grunge-texture-screen.svg);
+    background: url(images/grunge-texture-screen.svg);
     height: 100%;
     width:100%;
     animation: grunge 2s infinite 
@@ -100,8 +134,20 @@ table {
     left: 3%;
     opacity: 1;
     animation: flicker 2s infinite linear;
+    transform-origin: center right;
 }
 
+@-webkit-keyframes swing {
+    from {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
 @-webkit-keyframes grunge {
 	from {
 		opacity: 1;
@@ -240,7 +286,7 @@ table {
     height:25%;
     width:22.5%;
     bottom: -1%;
-    right:10px;
+    right: 6%;
 }
 
 #navicon {
@@ -254,17 +300,116 @@ table {
 #noise {
     height: 100%;
     width: 100%;
-    background: url(noisy-texture-100x100-o73-d100-c-3e5d58-t1.png);
+    background: url(images/noisy-texture-100x100-o73-d100-c-3e5d58-t1.png);
     opacity: 0.9;
     background-blend-mode:darken;
 }
 
-#curtains {
+
+.links li {
+   display: inline-block; 
+    padding-left: 5px;
+    font-size: 1.2em;
+    letter-spacing: 2;
+    color: white;
+}
+.links span {
+    color: #ff7c00;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    font-family: bebas neue;
+
+}
+
+.links {
+    position: relative;
+    bottom: 69%;
+}
+
+#left-nav-links {
+    float: left;
+    padding-left: 35px;
+}
+
+#right-nav-links {
+    float: right;
+    padding-right: 35px;
+}
+
+#nav-logo {
     position: absolute;
-    top: 0;
-    left:-7px;
-    //height: 100%;
+    width: 9.5em;
+    height: 5em;
+    top: -24px;
+    left: 44%;
+    
+}
+
+#fest-date {
+    position: absolute;
+    width: 12%;
+    height: 50%;
+    top: -7%;
+    left: 74%;
+    z-index: 1;
+    animation: swing 3s infinite ease-in-out;
+    transform-origin: 58% 28%;
+}
+
+.curtains {
+    position: absolute;
+    background: url(images/curtain.svg) no-repeat;
+    width: 10%;
+    height: 110%;
+    top: -20px;
+    z-index: 3;
+}
+
+.curtain-right {
+    transform: scaleX(-1);
+    float: right;
+    left: 91%;
+}
+
+.header {
+    position: fixed;
     width: 100%;
-    background: url(curtain.svg) center center no-repeat;
+    height: 15%;
+    background: #555555;
+    top: 0px;
+    left: 0px;
+}
+
+.logo-container {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    background: #666;
+}
+
+.nav-links {
+    list-style: none;
+    
+}
+
+.navbar {
+    display: inline-block;
+    width: 50%;
+    
+}
+
+.curtain-left {
+    float: left;
+    left: -15px;
+}
+
+#past-bg {
+    
+    position: relative;
+    background:url(images/past-bg.png) center center no-repeat fixed;
     background-size: cover;
+    height:100%;
+    width:100%;
 }
