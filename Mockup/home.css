@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    height: 10000px;
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -49,7 +51,7 @@ table {
 
 
 #home-background {
-    position: relative;
+    position: fixed;
     background: #222;
     height:100%;
     width:100%;
@@ -71,7 +73,8 @@ table {
 .bar {
     display: inline-block;
     width: 100%;
-    background: #ffb700;
+    background: rgb(168, 106, 43);
+    //background: rgb(149, 108, 88);;
     height: 100%;
 }
 
@@ -90,13 +93,13 @@ table {
 }
 
 #screen {
-    position: absolute;
+    position: fixed;
     background: #4d6166;
-    top:17%;
-    left:20%;
-    right:20%;
-    bottom: 25%;
-    box-shadow: 8px 8px 8px rgba(106,106,106,0.4);
+    top:20%;
+    left:22%;
+    right:22%;
+    bottom: 22%;
+    box-shadow: 4px 4px 8px rgba(106,106,106,0.4);
     border-radius: 5px;
 }
 
@@ -120,9 +123,12 @@ table {
 
 #screen-tex {
     position: absolute;
-    background: url(images/grunge-texture-screen.svg);
+    background: url(images/grunge-texture-screen.png) repeat;
+    background-size: auto;
     height: 100%;
     width:100%;
+    top:0;
+    left:0;
     animation: grunge 2s infinite 
 }
 
@@ -314,7 +320,7 @@ table {
     color: white;
 }
 .links span {
-    color: #ff7c00;
+    color:rgb(64,22,18);
 }
 .links a {
     text-decoration: none;
@@ -326,25 +332,25 @@ table {
 .links {
     position: relative;
     bottom: 69%;
+    display: inline-block;
 }
 
 #left-nav-links {
-    float: left;
-    padding-left: 35px;
+    margin-left: 20%;
 }
 
 #right-nav-links {
-    float: right;
+    margin-left: 15px;
     padding-right: 35px;
 }
 
 #nav-logo {
-    position: absolute;
+    position: relative;
     width: 9.5em;
     height: 5em;
-    top: -24px;
-    left: 44%;
-    
+    margin-top: -120px;
+    margin-left: 15px;
+    display: inline-block;
 }
 
 #fest-date {
@@ -359,18 +365,17 @@ table {
 }
 
 .curtains {
-    position: absolute;
+    position: fixed;
     background: url(images/curtain.svg) no-repeat;
-    width: 10%;
-    height: 110%;
+    background-size: cover;
+    width: 12%;
+    height: 105%;
     top: -20px;
-    z-index: 3;
 }
 
 .curtain-right {
     transform: scaleX(-1);
-    float: right;
-    left: 91%;
+    right: -15px;
 }
 
 .header {
@@ -412,4 +417,71 @@ table {
     background-size: cover;
     height:100%;
     width:100%;
+}
+
+#second-bacground {
+    position:fixed;
+    background: url(images/past-bg.png);
+    background-size: cover;
+    height: 100%;
+    width:100%;
+    left:0;
+    top:0;
+}
+
+.theme-logo {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background: url(images/cinema-paradiso-black.png) center center no-repeat;
+    background-size: contain;
+    opacity: .9;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.spotlight {
+    background: url(images/spotlight-2.png) center center no-repeat ;
+    position: fixed;
+    width: 250px;
+    height: 200px;
+    bottom: -10px;
+    transform: scaleY(-1);
+    animation: 5s flicker linear infinite;
+    
+}
+
+.spotlight-left {
+    left: 10%;
+    transform: rotate(-145deg);
+    
+}
+
+.spotlight-right {
+    right: 10%;
+    transform: rotate(145deg);
+}
+
+#scroll {
+   margin:0 auto;
+    width:100%;
+    position: fixed;
+    bottom:10px;
+    -webkit-animation:scrollmove 2s linear infinite;
+    
+}
+
+.arrow {
+    margin-top: 4px;
+	width: 0; 
+	height: 0; 
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	
+	border-top: 12px solid white;
+}
+@-webkit-keyframes scrollmove {
+    0% {bottom: 10px;}
+    50% {bottom:25px;}
+    100% {bottom: 10px;}
 }

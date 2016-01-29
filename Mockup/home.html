@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel=stylesheet type="text/css" href="home.css">
+        <script type="text/javascript" src="skrollr.min.js"></script>
     </head>
     <body>
         <div class="menu">
@@ -19,22 +20,35 @@
                        </div>
                        
                    </div>
-        <section id="landing">
-                <div id="home-background">
-                    <img src="images/curtain.svg" alt="" class="curtains curtain-left">
-                    <img src="images/curtain.svg" alt="" class="curtains curtain-right">
-                    <div id="screen"><img src="images/Explore-Logo.png" class="explore-logo"><div id="screen-tex"></div></div>
-                    <img src="images/projector-light.svg" class="projector-light">
-                    <div id="projector"></div>
-                    <img src="images/popcorn.svg" id="popcorn">
-                </div>
-            </section>
-            <section id="second">
-            <div id="past-bg"></div>
+        <div id="home-background"></div>
+            <div id="screen" data-100="top:20%;left:22%;right:22%;bottom: 22%;background-color:rgb(77, 97, 102);" data-600= "top:0;left:0;right:0;bottom:0;background-color:rgb(232, 72, 61);"><div id="screen-tex" data-200="opacity:0.9" data-550="opacity:0"></div><div class="theme-logo" data-200="opacity:0.9" data-550="opacity:0"></div></div>
+        <div class="curtains curtain-left" data-100="left:-1.5%" data-550="left:-12%"></div>
+        <div class="curtains curtain-right" data-100="right:-1.5%" data-550="right:-12%"></div>
+           <!-- <img src="images/curtain.svg" alt="" class="curtains curtain-left">
+            <img src="images/curtain.svg" alt="" class="curtains curtain-right">-->
+        <div id="second-bacground" data-600="height:0%" data-900="height:100%"></div>
+        <div class="spotlight spotlight-left" data-100="bottom:-10px" data-600="bottom:-210px"></div>
+        <div class="spotlight spotlight-right" data-100="bottom:-10px" data-600="bottom:-210px"></div>
+        <div align="center" id="scroll" data-0="opacity:1;" data-200="opacity:0">
+            <div class="arrow" style="opacity:0.7;"></div>
+            <div class="arrow" style="opacity:0.5;"></div><div style="opacity:0.3;" class="arrow"></div>
+        </div>
         
         
         
-            </section>
+        <script type="text/javascript">skrollr.init({
+    forceHeight: false,
+    smoothScrolling:true,
+    smoothScrollingDuration:500,
+    easing: {
+        //This easing will sure drive you crazy
+        wtf: Math.random,
+        inverted: function(p) {
+            return 1 - p;
+        }
+    }
+});    
+    </script>
     </body>
     
 </html>
