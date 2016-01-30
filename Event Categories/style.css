@@ -1,0 +1,84 @@
+@font-face {
+    font-family: bebas neue;
+    src: url(fonts/BebasNeue.otf);
+format("opentype");}
+
+html, body {
+    margin: 0px;
+}
+.category-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.cat-image {
+    position: relative;
+    background-size: contain;
+    width: 50%;
+    height: 80%;
+    top: 20%;
+    left: 50%;
+}
+
+.cat-info {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+    padding: 15px;
+}
+
+.cat-head {
+    width: 60%;
+    height: 19%;
+    font-size: 6.5em;
+    padding-bottom: .2em;
+    border-bottom: 3px solid white;
+    font-family: bebas neue;
+    letter-spacing: 7px
+}
+
+.cat-body {
+    padding: 40px 15px 15px 0px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.cat1 {
+    background: #1D9374;
+}
+
+.cat2 {
+    background: #4482CC;
+}
+
+.img1 {
+    background: url(images/fashion-anim.gif) center no-repeat;
+}
+
+.img2 {
+    background: url(images/dance-anim.gif) center no-repeat;
+}
+
+.img3 {
+    background: url(images/music-anim.gif) center no-repeat;
+    height: 90%;
+    top: 10%;
+}
+
+.cat3 {
+    background: #95A5A6;
+}
+
+.cat4 {
+    background: #8e44ad;
+}
+
+.img4 {
+    background: url(images/theatre-anim.gif) center no-repeat;
+}
