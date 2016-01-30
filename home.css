@@ -508,9 +508,9 @@ table {
 .ticket-2k15 {
     background: url(images/ticket2.png) center center no-repeat;
     background-size: contain;
-    bottom: 12%;
+    bottom: 10%;
     right:15%;
-    transform: rotate(20deg);
+    //transform: rotate(20deg);
 }
 
 .social-media {
@@ -533,7 +533,7 @@ table {
 
 .benny-2k13 {
     position: fixed;
-    top:30%;
+    bottom:30%;
     left: 25%;
     height: 25%;
     width:30%;
@@ -545,7 +545,7 @@ table {
 
 .alfaaz-2k13 {
     position: fixed;
-    top:30%;
+    bottom:48%;
     left: 50%;
     height: 25%;
     width:30%;
@@ -556,7 +556,7 @@ table {
 
 .crowd-2k13 {
     position: fixed;
-    top:30%;
+    bottom:28%;
     left: 75%;
     height: 25%;
     width:30%;
@@ -588,3 +588,23 @@ table {
 
 
 
+
+.neha-2k15 {
+    position: fixed;
+    bottom:23%;
+    left: 32%;
+    height: 25%;
+    width:30%;
+    background: url(images/neha.png) center center no-repeat;
+    background-size: contain;
+}
+
+.local-2k15 {
+    position: fixed;
+    bottom:23%;
+    left: 53%;
+    height: 25%;
+    width:30%;
+    background: url(images/localtrain.png) center center no-repeat;
+    background-size: contain;
+}
