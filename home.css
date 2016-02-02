@@ -110,7 +110,7 @@ table {
     background: url(images/projector-animated.gif) center center no-repeat;
     background-size: contain;
     position: fixed;
-    top: 27%;
+    //top: -5%;
     left:4%;
     height: 65%;
     width: 25%;
@@ -607,4 +607,98 @@ table {
     width:30%;
     background: url(images/localtrain.png) center center no-repeat;
     background-size: contain;
+}
+
+.projector-rotate {
+    position: fixed;
+    background: url(images/wheel.svg) center center no-repeat;
+    background-size: contain;
+    mix-blend-mode: soft-light;
+    height: 110%;
+    width:55%;
+    right:-25%;
+    top: 0;
+}
+
+.dance-gif {
+    position: fixed;
+    height: 70%;
+    width:40%;
+    background: url(images/dance-anim.gif) center center no-repeat;
+    background-size: contain;
+    bottom: 0;
+    left:0;
+}
+.music-gif {
+    position: fixed;
+    height: 75%;
+    width:40%;
+    background: url(images/music-anim.gif) center center no-repeat;
+    background-size: contain;
+    bottom: 0;
+    left:0;
+}
+.dramatics-gif {
+    position: fixed;
+    height: 75%;
+    width:40%;
+    background: url(images/theatre-anim.gif) center center no-repeat;
+    background-size: contain;
+    bottom: 0;
+    left:0;
+}
+
+.dance-background {
+    position: fixed;
+    background: #4482CC;
+    height:100%;
+    width:100%;
+}
+
+.cat{
+    position: fixed;
+    font-family: bebas neue;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 38px;
+    color:white;
+}
+.dance{
+    top:52.9%;
+    right:16.5%;
+}
+
+.cat-dance-disc {
+    position: fixed;
+    color: white;
+    display:inline-block;
+    width:30%;
+    top:52%;
+    left:38%;
+    height:60px;
+    font-family: lato;
+    line-height: 1.2;
+    text-align: right;
+    overflow: hidden;
+}
+
+
+.fashion {
+    top:52.9%;
+    right:15.5%;
+}
+
+.fashion-gif {
+    position: fixed;
+    height: 75%;
+    width:40%;
+    background: url(images/fashion-anim.gif) center center no-repeat;
+    background-size: contain;
+    bottom: 0;
+    left:0;
+}
+
+.dramatics {
+    top:52.9%;
+    right:13.7%;
 }
