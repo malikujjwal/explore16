@@ -67,8 +67,10 @@ table {
     top: 0%;
     height: 50px;
     z-index: 5;
-    //background: rgb(168, 106, 43);
     background: #b16c40;
+    background-image: url(images/reel-pattern.png);
+    background-size: contain;
+    background-blend-mode: overlay;
     padding: 0 18%;
     box-sizing: border-box;
     color: white;
