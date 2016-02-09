@@ -2,10 +2,6 @@
     font-family: bignoodletitling;
     src: url(fonts/big_noodle_titling.ttf);
 format("truetype");}
-@font-face {
-    font-family: bebas neue;
-    src: url(fonts/BebasNeue.otf);
-format("opentype");}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,7 +71,7 @@ table {
     background-image: url(images/reel-pattern.png);
     background-size: contain;
     background-blend-mode: overlay;
-    padding: 0 14%;
+    padding: 0 18%;
     box-sizing: border-box;
     color: white;
     box-shadow: 0px 2px 15px rgba(0,0,0, 0.3);
@@ -103,13 +99,13 @@ table {
 
 #screen {
     position: fixed;
-    background: #fff;
+    background: #4d6166;
     top:20%;
     left:22%;
     right:22%;
     bottom: 22%;
-    box-shadow: inset 0px 0px 95px rgba(0,0,0,0.5);
-    border-radius: 2px;
+    box-shadow: 4px 4px 8px rgba(106,106,106,0.4);
+    border-radius: 5px;
 }
 
 #projector {
@@ -295,98 +291,7 @@ table {
 		opacity: 0.5;
 	}
 }
-@-moz-keyframes flicker {
-	from {
-		opacity: 0.5;
-	}
-	4% {
-		opacity: 0.5;
-	}
-	6% {
-		opacity: 0.45;
-	}
-	8% {
-		opacity: 0.55;
-	}
-	10% {
-		opacity: 0.45;
-	}
-	11% {
-		opacity: 0.5;
-	}
-	12% {
-		opacity: 0.65;
-	}
-	14% {
-		opacity: 0.55;
-	}
-	16% {
-		opacity: 0.70;
-	}
-	17% {
-		opacity: 0.55;
-	}
-	19% {
-		opacity: 0.5;
-	}
-	20% {
-		opacity: 0.5;
-	}
-	24% {
-		opacity: 0.5;
-	}
-	26% {
-		opacity: 0.69;
-	}
-	28% {
-		opacity: 0.5;
-	}
-	38% {
-		opacity: 0.45;
-	}
-	40% {
-		opacity: 0.5;
-	}
-	42% {
-		opacity: 0.6;
-	}
-	44% {
-		opacity: 0.5;
-	}
-	46% {
-		opacity: 0.5;
-	}
-	56% {
-		opacity: 0.5;
-	}
-	58% {
-		opacity: 0.75;
-	}
-	60% {
-		opacity: 0.5;
-	}
-	68% {
-		opacity: 0.5;
-	}
-	70% {
-		opacity: .6; /*peak*/
-	}
-	72% {
-		opacity: 0.5;
-	}
-	93% {
-		opacity: 0.5;
-	}
-	95% {
-		opacity: .6; /*peak*/
-	}
-	97% {
-		opacity: 0.5;
-	}
-	to {
-		opacity: 0.5;
-	}
-}
+
 #popcorn {
     position: absolute;
     height:25%;
@@ -569,7 +474,7 @@ table {
     position: fixed;
     bottom:10px;
     -webkit-animation:scrollmove 2s linear infinite;
-    color:white;
+    
 }
 
 .arrow {
@@ -773,7 +678,7 @@ table {
     top:52%;
     left:38%;
     height:60px;
-    font-family:Lato;
+    font-family: lato;
     line-height: 1.2;
     text-align: right;
     overflow: hidden;
@@ -799,28 +704,3 @@ table {
     top:52.9%;
     right:13.7%;
 }
-
-.down {
-    height:5%;
-}
-
-.text-past {
-    position: fixed;
-    width: 82%;
-    left:18%;
-    display: inline-block;
-    bottom:50%;
-    text-align: center;
-    font-family: Lato;
-}
-
-.text-past2 {
-    position: fixed;
-    width: 82%;
-    left:18%;
-    display: inline-block;
-    bottom:46%;
-    text-align: center;
-    font-family: Lato;
-}
-
