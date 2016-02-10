@@ -6,6 +6,40 @@ format("truetype");}
     font-family: bebas neue;
     src: url(fonts/BebasNeue.otf);
 format("opentype");}
+@font-face {
+    font-family: 'social';
+    src: url(fonts/social.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'social' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus:before {
+    content: "\e904";
+}
+.icon-instagram:before {
+    content: "\e900";
+}
+.icon-facebook:before {
+    content: "\e901";
+}
+.icon-twitter:before {
+    content: "\e902";
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -81,8 +115,6 @@ table {
     box-shadow: 0px 2px 15px rgba(0,0,0, 0.3);
 }
 
-
-
 .menu img {
     height: 100%;
 }
@@ -130,17 +162,6 @@ table {
     
 }
 
-#screen-tex {
-    position: absolute;
-    background: url(images/grunge-texture-screen.png) repeat;
-    background-size: auto;
-    height: 100%;
-    width:100%;
-    top:0;
-    left:0;
-    animation: grunge 2s infinite 
-}
-
 .projector-light {
     position: absolute;
     height:81%;
@@ -162,45 +183,6 @@ table {
     100% {
         transform: rotate(5deg);
     }
-}
-@-webkit-keyframes grunge {
-	from {
-		opacity: 1;
-        left:0;
-	}
-	15% {
-		opacity: 1;
-        left: 1px;
-	}
-	30% {
-		opacity: 0.5;
-        left:2;
-	}
-	45% {
-		opacity: 1;
-        left:1;
-	}
-	60% {
-		opacity: 0.5;
-        left:2;
-	}
-	75% {
-		opacity: 1;
-        left:1;
-	}
-	85% {
-		opacity: 0.7;
-        left:2;
-	}
-	95% {
-		opacity: 0.8;
-        left:1;
-	}
-	to {
-		opacity: 1;
-        left:0;
-	}
-    
 }
 
 @-webkit-keyframes flicker {
@@ -620,13 +602,48 @@ table {
     z-index: 100;
 }
 
-.social-facebook {
-    height: 30px;
-    margin-top: 5px;
-    display:inline-block;
+.social-bg {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border-radius: 100%;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    display: table;
+    border: 1.5px white solid;
 }
 
+.social-bg a:hover {
+    color: black;
+    mix-blend-mode: soft-light;
+}
 
+.social-bg a {
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.twitter {
+    background: #00aced;
+}
+
+.gplus {
+    background: #d34836;
+}
+
+.instagram {
+    background: #527FA4;
+}
 
 .benny-2k13 {
     position: fixed;
@@ -638,8 +655,6 @@ table {
     background-size: contain;
 }
 
-
-
 .alfaaz-2k13 {
     position: fixed;
     bottom:48%;
@@ -650,7 +665,6 @@ table {
     background-size: contain;
 }
 
-
 .crowd-2k13 {
     position: fixed;
     bottom:28%;
@@ -659,7 +673,6 @@ table {
     width:30%;
     background: url(images/crowd.png) center center no-repeat;
     background-size: contain;
-
 }
 
 .links-menu {
@@ -676,15 +689,12 @@ table {
     font-family: bignoodletitling;   
     cursor: pointer;
 }
+
 .menu span{
     line-height: 50px;
     font-size: 18px;
     font-family: bignoodletitling;   
 }
-
-
-
-
 
 .neha-2k15 {
     position: fixed;
@@ -778,7 +788,6 @@ table {
     text-align: right;
     overflow: hidden;
 }
-
 
 .fashion {
     top:52.9%;
