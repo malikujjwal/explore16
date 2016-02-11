@@ -1,3 +1,5 @@
+/* ====================== FONTS IMPORT ========================= */
+
 @font-face {
     font-family: bignoodletitling;
     src: url(fonts/big_noodle_titling.ttf);
@@ -12,6 +14,9 @@ format("opentype");}
     font-weight: normal;
     font-style: normal;
 }
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+/* ====================== FONT AWESOME ========================= */
 
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -40,6 +45,8 @@ format("opentype");}
 .icon-twitter:before {
     content: "\e902";
 }
+
+/* ======================== NORMALIZE ======================= */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -86,7 +93,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+a {
+    text-decoration: none;
+}
 
 #home-background {
     position: fixed;
@@ -115,24 +124,6 @@ table {
     box-shadow: 0px 2px 15px rgba(0,0,0, 0.3);
 }
 
-.menu img {
-    height: 100%;
-}
-
-#reel {
-    position: fixed;
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-    top:0;
-    left:0;
-    background: url(images/reel-pattern.png);
-    background-size: contain;
-    opacity: 0.8;
-    mix-blend-mode: overlay;
-    z-index: 900;
-}
-
 #screen {
     position: fixed;
     background: #fff;
@@ -148,7 +139,6 @@ table {
     background: url(images/projector-animated.gif) center center no-repeat;
     background-size: contain;
     position: fixed;
-    //top: -5%;
     left:4%;
     height: 65%;
     width: 25%;
@@ -369,13 +359,6 @@ table {
 		opacity: 0.5;
 	}
 }
-#popcorn {
-    position: absolute;
-    height:25%;
-    width:22.5%;
-    bottom: -1%;
-    right: 6%;
-}
 
 #navicon {
     position: absolute;
@@ -392,7 +375,6 @@ table {
     opacity: 0.9;
     background-blend-mode:darken;
 }
-
 
 .links li {
    display: inline-block; 
@@ -419,12 +401,10 @@ table {
 }
 
 #left-nav-links {
-    //left: 20%;
     display: inline-block;
 }
 
 #right-nav-links {
-    //right: 20%;
 }
 
 #nav-logo {
@@ -569,8 +549,6 @@ table {
     100% {bottom: 10px;}
 }
 
-
-
 .ticket-2k13 {
     background: url(images/ticket.png) center center no-repeat;
     background-size: contain;
@@ -589,7 +567,6 @@ table {
     background-size: contain;
     bottom: 10%;
     right:15%;
-    //transform: rotate(20deg);
 }
 
 .social-media {
@@ -832,4 +809,291 @@ table {
     text-align: center;
     font-family: Lato;
 }
+
+
+.footer {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    background: #333;
+    z-index: 55;
+}
+
+.left-footer {
+    position: relative;    
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: 90%;
+    margin-top: 5px;
+    border-right: 2px solid rgba(150,150,150, 0.2);
+    background: url(images/chitkara_university_punjab.png) center center no-repeat;
+    background-size: contain;
+}
+
+.right-footer {
+    display: inline-block;
+    width: 69%;
+    height: 100%;
+    float: right;
+    
+}
+
+.map-container {
+    display: table;
+    position: relative;
+    height: 80%;
+    width: 70%;
+    margin: 5px;
+    margin-top: 7px;
+}
+
+.map-container img {
+    display: inline-block;
+    height: 100%;
+}
+.map-container span {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    color: #ccc;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: .8em;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.footer-images {
+    position: fixed;
+    width: 100%;
+    height: 160px;
+    bottom: 60px;
+}
+
+.ending-page-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    //background: #444;
+}
+
+.right-container {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+}
+
+.left-container {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.teaser {
+    position: relative;
+    max-width: 500px;
+    max-height: 280px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 21%;
+}
+
+.divider {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-right: 3px solid rgba(200,200,200, 0.1);
+    border-radius: 2px;
+    margin-top: -15px;
+}
+
+
+#popcorn {
+    position: fixed;
+    width: 350px;
+    height: 180px;
+    right: 25px;
+    bottom: 55px;
+    background: url(images/popcorn.svg) center center no-repeat;
+    background-size: contain;
+    z-index: 5;
+}
+
+/* ========================= QUERY FORM ========================== */
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: white;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: white;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #fff;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #fff;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #fff;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #fff;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #fff;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#form {
+  position: relative;
+  width: 60%;
+  max-width: 500px;
+  margin: 19% auto 0px 15%;
+}
+#form h2 {
+    color: #ddd;
+    font-family: bebas neue;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 2px
+}
+
+#form input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 100%;
+  line-height: 40px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #fff;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+#form input:hover {
+  background: #535353;
+  color: #e2dedb;
+}
+
+#form textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 18%;
+  max-height: 200px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+#form textarea:hover {
+  background: #535353;
+  color: #edecec;
+}
+
+#form #submit {  
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#form #submit:hover {
+  color: #e2dedb;
+}
+
+
+.screen-texture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/screen-texture.gif);
+    opacity: 0.1;
+    
+}
+
 
