@@ -810,7 +810,7 @@ a {
     font-family: Lato;
 }
 
-
+/* ================= FOOTER ================== */
 .footer {
     position: fixed;
     width: 100%;
@@ -837,14 +837,34 @@ a {
     width: 69%;
     height: 100%;
     float: right;
-    
+}
+
+.footer-links ul{
+    position: absolute;
+    display: table-cell;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    margin-right: 50px;
+    line-height: 20px;
+    list-style: none;
+
+}
+.footer-links li {
+    display: inline-block;
+    font-size: 12px;
+    padding: 18px 10px 0px 10px;
+}
+.footer-links a {
+    font-family: "Lato";
+    color: white;
 }
 
 .map-container {
-    display: table;
+    display: inline-block;
     position: relative;
     height: 80%;
-    width: 70%;
+    width: 50%;
     margin: 5px;
     margin-top: 7px;
 }
@@ -859,25 +879,17 @@ a {
     height: 100%;
     width: 60%;
     color: #ccc;
-    font-family: helvetica;
-    font-weight: bold;
+    font-family: "Lato";
+    font-weight: 600;
     font-size: .8em;
     padding-left: 10px;
     padding-top: 5px;
-}
-
-.footer-images {
-    position: fixed;
-    width: 100%;
-    height: 160px;
-    bottom: 60px;
 }
 
 .ending-page-container {
     position: fixed;
     height: 100%;
     width: 100%;
-    //background: #444;
 }
 
 .right-container {
@@ -1073,7 +1085,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  color: #b3aca7;
+  color: #fff;
   
   outline:none;
   cursor: pointer;
@@ -1095,5 +1107,6 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     opacity: 0.1;
     
 }
+
 
 
